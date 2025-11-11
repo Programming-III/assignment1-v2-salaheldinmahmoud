@@ -5,9 +5,9 @@
 #include <string>
 #using namespace std;
 //#write student class here
-class Student{
-int yearLevel;
-string major;
+class Student :: Person {
+private int yearLevel;
+private string major;
 display(){
 
 }

@@ -1,25 +1,60 @@
 #ifndef COURSE_H
 #define COURSE_H
 
+#include <iostream>
 #include <string>
 #include "Student.h"
 using namespace std;
-//#write your code here
+
 class Course {
-private string courseCode;
-private string courseName;
-private int maxStudent;
-private Student* students ;
-private int currentStudents;
+private:
+    string courseCode;
+    string courseName;
+    int maxStudents;
+    Student* students;    
+    int currentStudents;
 
-addStudent(const Student & s){
+public:
+    
+    Course(string code, string name, int max) {
+        courseCode = code;
+        courseName = name;
+        maxStudents = max;
+        currentStudents = 0;
+        students = new Student[maxStudents];
+    }
 
-currentStudents ++;
-}
+ 
+    void addStudent(const Student& s) {
+        if (currentStudents < maxStudents) {
+            students[currentStudents] = s;
+            currentStudents++;
+        } else {
+            cout << "Course is full, cannot add more students.\n";
+        }
+    }
 
-  displayCourseInfo(){
+    
+    void displayCourseInfo() const {
+        cout << "Course Code: " << courseCode << endl;
+        cout << "Course Name: " << courseName << endl;
+        cout << "Max Students: " << maxStudents << endl;
+        cout << "Current Students: " << currentStudents << endl;
+        cout << "-----------------------------------" << endl;
 
-  }
+        for (int i = 0; i < currentStudents; i++) {
+            cout << "Student " << i + 1 << ": ";
+            students[i].displayStudentInfo();  // assumes Student class has displayStudentInfo()
+        }
+    }
+
+    
+    ~Course() {
+        delete[] students;
+    }
+};
+
+#endif
 
 
 

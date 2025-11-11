@@ -5,8 +5,11 @@
 using namespace std;
 
 //#write Person class here
+string name;
+int id;
+display(){
 
-
+}
 
 
 

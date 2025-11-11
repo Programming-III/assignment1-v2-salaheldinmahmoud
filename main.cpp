@@ -12,23 +12,9 @@ using namespace std;
 
 
 int main() {
-    
-    Instructor instructor1("Dr. Lina Khaled", , "Computer Science", 5);
+ 
 
 
-    Student s1("Omar Nabil", 2025, 2, "informatics");
-
-
-    Course course1("CS101", "Introduction to Programming",3);
-
-
-    course1.addStudent(s1);
-  
-
-
-
-int main() {
-    // Create an instructor
     Instructor instructor1("Dr. Lina Khaled", , "Computer Science", 5);
 
 

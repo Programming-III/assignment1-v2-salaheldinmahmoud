@@ -5,6 +5,12 @@
 #include <string>
 #using namespace std;
 //#write student class here
+class Student{
+int yearLevel;
+string major;
+display(){
+
+}
 
 
 
@@ -13,9 +19,6 @@
 
 
 
-
-
-
-
+}
 
 #endif

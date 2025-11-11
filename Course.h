@@ -44,7 +44,7 @@ public:
 
         for (int i = 0; i < currentStudents; i++) {
             cout << "Student " << i + 1 << ": ";
-            students[i].displayStudentInfo();  // assumes Student class has displayStudentInfo()
+            students[i].display(); 
         }
     }
 

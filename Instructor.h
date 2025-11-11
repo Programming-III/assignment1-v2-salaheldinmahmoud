@@ -4,8 +4,15 @@
 #include "Person.h"
 using namespace std;
 //#write Instructor class here
+class instructor {
+string department ;
+int experienceYears;
 
 
+display(){
+
+
+}
 
 
 

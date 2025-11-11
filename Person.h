@@ -5,12 +5,13 @@
 using namespace std;
 
 //#write Person class here
-string name;
-int id;
+class Person{
+private string name;
+private int id;
 display(){
 
 }
-
+}
 
 
 
